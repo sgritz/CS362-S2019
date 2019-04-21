@@ -696,14 +696,12 @@ int feastCardEffect(int choice1, struct gameState *state) {
                state->deckCount[currentPlayer] +
                state->discardCount[currentPlayer]);
       }
-
-      didBuyCard = TRUE;//No more buying cards
     }
   }
 
   //Reset Hand
-  moveCards(temphand,
-            state->hand[currentPlayer],
+  moveCards(state->hand[currentPlayer],
+            temphand,
             state->handCount[currentPlayer]);
         
   return 0;
@@ -712,8 +710,8 @@ int feastCardEffect(int choice1, struct gameState *state) {
 int seaHagCardEffect(struct gameState *state) {
   const int currentPlayer = whoseTurn(state);
 
-  for (int i = 0; i < state->numPlayers; i++) {
-    if (i != currentPlayer) {
+  for (int i = 0; i <= state->numPlayers; i++) {
+    if (i == currentPlayer) {
       state->discard[i][state->discardCount[i]] = 
           state->deck[i][state->deckCount[i]];
 
@@ -760,12 +758,12 @@ int smithyCardEffect(struct gameState *state, int handPos) {
   const int currentPlayer = whoseTurn(state);
 
   //+3 Cards
-  for (int i = 0; i < 3; i++) {
+  for (int i = 0; i <= 3; i++) {
     drawCard(currentPlayer, state);
   }
 
   //Discard card from hand
-  discardCard(handPos, currentPlayer, state, 0);
+  discardCard(handPos, currentPlayer, state, 1);
   return 0;
 }
 
@@ -785,22 +783,22 @@ int adventurerCardEffect(struct gameState *state) {
 
     //Top card of hand is most recently drawn card.
     cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer] - 1];
-    if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold) {
+    if (cardDrawn == silver || cardDrawn == gold) {
       drawnTreasure++;
     }
     else {
       //This should just remove the top card (the most recently drawn one).
+      tempHandCount++;
       temphand[tempHandCount] = cardDrawn;
       state->handCount[currentPlayer]--;
-      tempHandCount++;
     }
   }
   while (tempHandCount - 1 >= 0) {
     // Discard all cards in play that have been drawn
+    tempHandCount--;
     state->discard[currentPlayer][state->discardCount[currentPlayer]] =
         temphand[tempHandCount - 1];
     state->discardCount[currentPlayer]++;
-    tempHandCount--;
   }
   return 0;
 }
