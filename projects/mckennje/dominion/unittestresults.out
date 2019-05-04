@@ -3,12 +3,6 @@ unittest1.c:
 Testing function: feastCardEffect
 TestGainCardWorthMaxFiveGold
 ヽ(・∀・)ﾉ ALL TESTS PASSED
-File 'dominion.c'
-Lines executed:19.62% of 632
-Branches executed:25.06% of 423
-Taken at least once:14.66% of 423
-Calls executed:14.95% of 107
-Creating 'dominion.c.gcov'
 
 unittest2.c:
 Testing function: seaHagCardEffect
@@ -16,35 +10,17 @@ TestNoOtherPlayers
 TestNoCurseCardsLeft
 TestOtherPlayerDeckIsEmpty
 ヽ(・∀・)ﾉ ALL TESTS PASSED
-File 'dominion.c'
-Lines executed:25.63% of 632
-Branches executed:29.79% of 423
-Taken at least once:18.68% of 423
-Calls executed:18.69% of 107
-Creating 'dominion.c.gcov'
 
 unittest3.c:
 Testing function: adventurerCardEffect
 TestDeckEmpty
 TestDeckAndDiscardEmpty
 ヽ(・∀・)ﾉ ALL TESTS PASSED
-File 'dominion.c'
-Lines executed:29.59% of 632
-Branches executed:32.15% of 423
-Taken at least once:20.57% of 423
-Calls executed:23.36% of 107
-Creating 'dominion.c.gcov'
 
 unittest4.c:
 Testing function: smithyCardEffect
 TestThreeCardsAdded
 ヽ(・∀・)ﾉ ALL TESTS PASSED
-File 'dominion.c'
-Lines executed:30.54% of 632
-Branches executed:32.62% of 423
-Taken at least once:21.04% of 423
-Calls executed:26.17% of 107
-Creating 'dominion.c.gcov'
 
 cardtest1.c:
 Testing card: Steward
@@ -54,34 +30,16 @@ TestTrashTwoCards
 TestTrashTwoCardsWhenHandIsEmpty
 TestTrashOneCard
 ヽ(・∀・)ﾉ ALL TESTS PASSED
-File 'dominion.c'
-Lines executed:33.39% of 632
-Branches executed:39.01% of 423
-Taken at least once:23.17% of 423
-Calls executed:31.78% of 107
-Creating 'dominion.c.gcov'
 
 cardtest2.c:
 Testing card: Village
 TestDrawCardGainTwoActions
 ヽ(・∀・)ﾉ ALL TESTS PASSED
-File 'dominion.c'
-Lines executed:34.18% of 632
-Branches executed:39.01% of 423
-Taken at least once:23.40% of 423
-Calls executed:33.64% of 107
-Creating 'dominion.c.gcov'
 
 cardtest3.c:
 Testing card: Smithy
 TestThreeCardsAddedWhenDeckIsEmpty
 ヽ(・∀・)ﾉ ALL TESTS PASSED
-File 'dominion.c'
-Lines executed:34.49% of 632
-Branches executed:39.01% of 423
-Taken at least once:23.64% of 423
-Calls executed:34.58% of 107
-Creating 'dominion.c.gcov'
 
 cardtest4.c:
 Testing card: Adventurer
@@ -89,6 +47,176 @@ FindTwoTreasures
 FindOneTreasure
 FindNoTreasures
 ヽ(・∀・)ﾉ ALL TESTS PASSED
+
+gcov dominion.c:
+Function 'updateCoins'
+Lines executed:81.82% of 11
+Branches executed:100.00% of 8
+Taken at least once:75.00% of 8
+No calls
+
+Function 'gainCard'
+Lines executed:61.54% of 13
+Branches executed:100.00% of 6
+Taken at least once:50.00% of 6
+Calls executed:100.00% of 1
+
+Function 'discardCard'
+Lines executed:93.33% of 15
+Branches executed:100.00% of 8
+Taken at least once:87.50% of 8
+No calls
+
+Function 'cardEffect'
+Lines executed:12.02% of 208
+Branches executed:16.77% of 161
+Taken at least once:5.59% of 161
+Calls executed:17.54% of 57
+
+Function 'adventurerCardEffect'
+Lines executed:100.00% of 24
+Branches executed:100.00% of 12
+Taken at least once:83.33% of 12
+Calls executed:100.00% of 4
+
+Function 'smithyCardEffect'
+Lines executed:100.00% of 6
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+Calls executed:100.00% of 3
+
+Function 'treasureMapCardEffect'
+Lines executed:0.00% of 14
+Branches executed:0.00% of 10
+Taken at least once:0.00% of 10
+Calls executed:0.00% of 4
+
+Function 'seaHagCardEffect'
+Lines executed:100.00% of 16
+Branches executed:100.00% of 10
+Taken at least once:90.00% of 10
+Calls executed:100.00% of 3
+
+Function 'feastCardEffect'
+Lines executed:93.33% of 15
+Branches executed:100.00% of 6
+Taken at least once:66.67% of 6
+Calls executed:88.89% of 9
+
+Function 'moveCards'
+Lines executed:100.00% of 5
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+No calls
+
+Function 'getCost'
+Lines executed:10.53% of 57
+Branches executed:100.00% of 28
+Taken at least once:7.14% of 28
+No calls
+
+Function 'drawCard'
+Lines executed:94.12% of 17
+Branches executed:100.00% of 4
+Taken at least once:75.00% of 4
+Calls executed:100.00% of 1
+
+Function 'shuffleDiscardIntoDeck'
+Lines executed:100.00% of 8
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+Calls executed:100.00% of 1
+
+Function 'getWinners'
+Lines executed:0.00% of 24
+Branches executed:0.00% of 22
+Taken at least once:0.00% of 22
+Calls executed:0.00% of 2
+
+Function 'scoreFor'
+Lines executed:0.00% of 24
+Branches executed:0.00% of 42
+Taken at least once:0.00% of 42
+Calls executed:0.00% of 3
+
+Function 'isGameOver'
+Lines executed:0.00% of 10
+Branches executed:0.00% of 8
+Taken at least once:0.00% of 8
+No calls
+
+Function 'endTurn'
+Lines executed:0.00% of 20
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+Calls executed:0.00% of 3
+
+Function 'whoseTurn'
+Lines executed:100.00% of 2
+No branches
+No calls
+
+Function 'fullDeckCount'
+Lines executed:0.00% of 9
+Branches executed:0.00% of 12
+Taken at least once:0.00% of 12
+No calls
+
+Function 'supplyCount'
+Lines executed:100.00% of 2
+No branches
+No calls
+
+Function 'handCard'
+Lines executed:0.00% of 3
+No branches
+Calls executed:0.00% of 1
+
+Function 'numHandCards'
+Lines executed:0.00% of 2
+No branches
+Calls executed:0.00% of 1
+
+Function 'buyCard'
+Lines executed:0.00% of 13
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+Calls executed:0.00% of 4
+
+Function 'playCard'
+Lines executed:0.00% of 14
+Branches executed:0.00% of 10
+Taken at least once:0.00% of 10
+Calls executed:0.00% of 3
+
+Function 'shuffle'
+Lines executed:100.00% of 16
+Branches executed:100.00% of 8
+Taken at least once:100.00% of 8
+Calls executed:100.00% of 2
+
+Function 'initializeGame'
+Lines executed:80.65% of 62
+Branches executed:91.30% of 46
+Taken at least once:73.91% of 46
+Calls executed:100.00% of 5
+
+Function 'kingdomCards'
+Lines executed:0.00% of 13
+No branches
+No calls
+
+Function 'newGame'
+Lines executed:0.00% of 3
+No branches
+No calls
+
+Function 'compare'
+Lines executed:100.00% of 6
+Branches executed:100.00% of 4
+Taken at least once:100.00% of 4
+No calls
+
 File 'dominion.c'
 Lines executed:35.92% of 632
 Branches executed:39.95% of 423
