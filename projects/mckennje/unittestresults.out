@@ -1,0 +1,233 @@
+Result for running Dominion tests:
+unittest1.c:
+UNIT TEST 1
+File 'dominion.c'
+Lines executed:20.42% of 568
+Creating 'dominion.c.gcov'
+
+unittest2.c:
+UNIT TEST 2
+File 'dominion.c'
+Lines executed:20.42% of 568
+Creating 'dominion.c.gcov'
+
+unittest3.c:
+UNIT TEST 3
+File 'dominion.c'
+Lines executed:20.42% of 568
+Creating 'dominion.c.gcov'
+
+unittest4.c:
+UNIT TEST 4
+File 'dominion.c'
+Lines executed:20.42% of 568
+Creating 'dominion.c.gcov'
+
+cardtest1.c:
+--- Testing card: steward ---
+TestDrawTwoCards
+TestGainTwoCoins
+TestTrashTwoCards
+Starting cards: (18)(4)(2)(1)(9); Removed: (4)(2); Ending cards: (9)(1), expected: (1)(9)
+Starting cards: (18)(4)(2)(1)(9); Removed: (4)(1); Ending cards: (2)(9), expected: (2)(9)
+Starting cards: (18)(4)(2)(1)(9); Removed: (4)(9); Ending cards: (2)(1), expected: (2)(1)
+Starting cards: (18)(4)(2)(1)(9); Removed: (2)(1); Ending cards: (9)(4), expected: (4)(9)
+Starting cards: (18)(4)(2)(1)(9); Removed: (2)(9); Ending cards: (1)(4), expected: (4)(1)
+Starting cards: (18)(4)(2)(1)(9); Removed: (1)(9); Ending cards: (2)(4), expected: (4)(2)
+ヽ(・∀・)ﾉ ALL TESTS PASSED
+File 'dominion.c'
+Lines executed:20.42% of 568
+Creating 'dominion.c.gcov'
+
+cardtest2.c:
+CARD TEST 2
+File 'dominion.c'
+Lines executed:20.42% of 568
+Creating 'dominion.c.gcov'
+
+cardtest3.c:
+CARD TEST 3
+File 'dominion.c'
+Lines executed:20.42% of 568
+Creating 'dominion.c.gcov'
+
+cardtest4.c:
+CARD TEST 4
+File 'dominion.c'
+Lines executed:20.42% of 568
+Creating 'dominion.c.gcov'
+
+Result for running Dominion tests:
+unittest1.c:
+UNIT TEST 1
+File 'dominion.c'
+Lines executed:0.00% of 568
+Creating 'dominion.c.gcov'
+
+unittest2.c:
+UNIT TEST 2
+File 'dominion.c'
+Lines executed:0.00% of 568
+Creating 'dominion.c.gcov'
+
+unittest3.c:
+UNIT TEST 3
+File 'dominion.c'
+Lines executed:0.00% of 568
+Creating 'dominion.c.gcov'
+
+unittest4.c:
+UNIT TEST 4
+File 'dominion.c'
+Lines executed:0.00% of 568
+Creating 'dominion.c.gcov'
+
+cardtest1.c:
+Result for running Dominion tests:
+unittest1.c:
+UNIT TEST 1
+File 'dominion.c'
+Lines executed:0.00% of 568
+Creating 'dominion.c.gcov'
+
+unittest2.c:
+UNIT TEST 2
+File 'dominion.c'
+Lines executed:0.00% of 568
+Creating 'dominion.c.gcov'
+
+unittest3.c:
+UNIT TEST 3
+File 'dominion.c'
+Lines executed:0.00% of 568
+Creating 'dominion.c.gcov'
+
+unittest4.c:
+UNIT TEST 4
+File 'dominion.c'
+Lines executed:0.00% of 568
+Creating 'dominion.c.gcov'
+
+cardtest1.c:
+Result for running Dominion tests:
+unittest1.c:
+UNIT TEST 1
+File 'dominion.c'
+Lines executed:0.00% of 568
+Creating 'dominion.c.gcov'
+
+unittest2.c:
+UNIT TEST 2
+File 'dominion.c'
+Lines executed:0.00% of 568
+Creating 'dominion.c.gcov'
+
+unittest3.c:
+UNIT TEST 3
+File 'dominion.c'
+Lines executed:0.00% of 568
+Creating 'dominion.c.gcov'
+
+unittest4.c:
+UNIT TEST 4
+File 'dominion.c'
+Lines executed:0.00% of 568
+Creating 'dominion.c.gcov'
+
+cardtest1.c:
+--- Testing card: steward ---
+TestDrawTwoCards
+TestGainTwoCoins
+TestTrashTwoCards
+Starting cards: (18)(4)(2)(1)(9); Removed: (4)(2); Ending cards: (9)(1), expected: (1)(9)
+Starting cards: (18)(4)(2)(1)(9); Removed: (4)(1); Ending cards: (2)(9), expected: (2)(9)
+Starting cards: (18)(4)(2)(1)(9); Removed: (4)(9); Ending cards: (2)(1), expected: (2)(1)
+Starting cards: (18)(4)(2)(1)(9); Removed: (2)(1); Ending cards: (9)(4), expected: (4)(9)
+Starting cards: (18)(4)(2)(1)(9); Removed: (2)(9); Ending cards: (1)(4), expected: (4)(1)
+Starting cards: (18)(4)(2)(1)(9); Removed: (1)(9); Ending cards: (2)(4), expected: (4)(2)
+TestTrashTwoCards
+JEM: 4
+ヽ(・∀・)ﾉ ALL TESTS PASSED
+File 'dominion.c'
+Lines executed:20.42% of 568
+Creating 'dominion.c.gcov'
+
+cardtest2.c:
+CARD TEST 2
+File 'dominion.c'
+Lines executed:20.42% of 568
+Creating 'dominion.c.gcov'
+
+cardtest3.c:
+CARD TEST 3
+File 'dominion.c'
+Lines executed:20.42% of 568
+Creating 'dominion.c.gcov'
+
+cardtest4.c:
+CARD TEST 4
+File 'dominion.c'
+Lines executed:20.42% of 568
+Creating 'dominion.c.gcov'
+
+Result for running Dominion tests:
+unittest1.c:
+UNIT TEST 1
+File 'dominion.c'
+Lines executed:0.00% of 568
+Creating 'dominion.c.gcov'
+
+unittest2.c:
+UNIT TEST 2
+File 'dominion.c'
+Lines executed:0.00% of 568
+Creating 'dominion.c.gcov'
+
+unittest3.c:
+UNIT TEST 3
+File 'dominion.c'
+Lines executed:0.00% of 568
+Creating 'dominion.c.gcov'
+
+unittest4.c:
+UNIT TEST 4
+File 'dominion.c'
+Lines executed:0.00% of 568
+Creating 'dominion.c.gcov'
+
+cardtest1.c:
+--- Testing card: steward ---
+TestDrawTwoCards
+TestGainTwoCoins
+TestTrashTwoCards
+Starting cards: (18)(4)(2)(1)(9); Removed: (4)(2); Ending cards: (9)(1), expected: (1)(9)
+Starting cards: (18)(4)(2)(1)(9); Removed: (4)(1); Ending cards: (2)(9), expected: (2)(9)
+Starting cards: (18)(4)(2)(1)(9); Removed: (4)(9); Ending cards: (2)(1), expected: (2)(1)
+Starting cards: (18)(4)(2)(1)(9); Removed: (2)(1); Ending cards: (9)(4), expected: (4)(9)
+Starting cards: (18)(4)(2)(1)(9); Removed: (2)(9); Ending cards: (1)(4), expected: (4)(1)
+Starting cards: (18)(4)(2)(1)(9); Removed: (1)(9); Ending cards: (2)(4), expected: (4)(2)
+TestTrashTwoCards
+JEM: 0
+ヽ(・∀・)ﾉ ALL TESTS PASSED
+File 'dominion.c'
+Lines executed:20.42% of 568
+Creating 'dominion.c.gcov'
+
+cardtest2.c:
+CARD TEST 2
+File 'dominion.c'
+Lines executed:20.42% of 568
+Creating 'dominion.c.gcov'
+
+cardtest3.c:
+CARD TEST 3
+File 'dominion.c'
+Lines executed:20.42% of 568
+Creating 'dominion.c.gcov'
+
+cardtest4.c:
+CARD TEST 4
+File 'dominion.c'
+Lines executed:20.42% of 568
+Creating 'dominion.c.gcov'
+

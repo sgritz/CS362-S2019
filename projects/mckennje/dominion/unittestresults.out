@@ -1,0 +1,98 @@
+Result for running Dominion tests:
+unittest1.c:
+Testing function: feastCardEffect
+TestGainCardWorthMaxFiveGold
+ヽ(・∀・)ﾉ ALL TESTS PASSED
+File 'dominion.c'
+Lines executed:19.62% of 632
+Branches executed:25.06% of 423
+Taken at least once:14.66% of 423
+Calls executed:14.95% of 107
+Creating 'dominion.c.gcov'
+
+unittest2.c:
+Testing function: seaHagCardEffect
+TestNoOtherPlayers
+TestNoCurseCardsLeft
+TestOtherPlayerDeckIsEmpty
+ヽ(・∀・)ﾉ ALL TESTS PASSED
+File 'dominion.c'
+Lines executed:25.63% of 632
+Branches executed:29.79% of 423
+Taken at least once:18.68% of 423
+Calls executed:18.69% of 107
+Creating 'dominion.c.gcov'
+
+unittest3.c:
+Testing function: adventurerCardEffect
+TestDeckEmpty
+TestDeckAndDiscardEmpty
+ヽ(・∀・)ﾉ ALL TESTS PASSED
+File 'dominion.c'
+Lines executed:29.59% of 632
+Branches executed:32.15% of 423
+Taken at least once:20.57% of 423
+Calls executed:23.36% of 107
+Creating 'dominion.c.gcov'
+
+unittest4.c:
+Testing function: smithyCardEffect
+TestThreeCardsAdded
+ヽ(・∀・)ﾉ ALL TESTS PASSED
+File 'dominion.c'
+Lines executed:30.54% of 632
+Branches executed:32.62% of 423
+Taken at least once:21.04% of 423
+Calls executed:26.17% of 107
+Creating 'dominion.c.gcov'
+
+cardtest1.c:
+Testing card: Steward
+TestDrawTwoCards
+TestGainTwoCoins
+TestTrashTwoCards
+TestTrashTwoCardsWhenHandIsEmpty
+TestTrashOneCard
+ヽ(・∀・)ﾉ ALL TESTS PASSED
+File 'dominion.c'
+Lines executed:33.39% of 632
+Branches executed:39.01% of 423
+Taken at least once:23.17% of 423
+Calls executed:31.78% of 107
+Creating 'dominion.c.gcov'
+
+cardtest2.c:
+Testing card: Village
+TestDrawCardGainTwoActions
+ヽ(・∀・)ﾉ ALL TESTS PASSED
+File 'dominion.c'
+Lines executed:34.18% of 632
+Branches executed:39.01% of 423
+Taken at least once:23.40% of 423
+Calls executed:33.64% of 107
+Creating 'dominion.c.gcov'
+
+cardtest3.c:
+Testing card: Smithy
+TestThreeCardsAddedWhenDeckIsEmpty
+ヽ(・∀・)ﾉ ALL TESTS PASSED
+File 'dominion.c'
+Lines executed:34.49% of 632
+Branches executed:39.01% of 423
+Taken at least once:23.64% of 423
+Calls executed:34.58% of 107
+Creating 'dominion.c.gcov'
+
+cardtest4.c:
+Testing card: Adventurer
+FindTwoTreasures
+FindOneTreasure
+FindNoTreasures
+ヽ(・∀・)ﾉ ALL TESTS PASSED
+File 'dominion.c'
+Lines executed:35.92% of 632
+Branches executed:39.95% of 423
+Taken at least once:24.82% of 423
+Calls executed:35.51% of 107
+Creating 'dominion.c.gcov'
+
