@@ -17,15 +17,15 @@
  #include "rngs.h"
  
  int main(){
-	int i;
 	int seed = 1000;
 	int numPlayers = 2;
 	int currPlayer = 0;
-	int cardDiff;	
-	int choice1 = 0, choice2 = 0, choice 3 = 0, handpos = 0; 
+	int cardDiff;
+	int actDiff; 
+	int choice1 = 0, choice2 = 0, choice3 = 0, handpos = 0, bonus = 0; 
 	int kingdom[10] = {adventurer, council_room, feast, gardens, mine, remodel, smithy, village, baron, great_hall};
-	int temp[MAX_HAND];
 	struct gameState game, test;
+	int err = 0;
 	
 	//Initialize game
 	initializeGame(numPlayers, kingdom, seed, &game);
@@ -34,23 +34,26 @@
 	
 	memcpy(&test, &game, sizeof(struct gameState));
 	
-	cardEffect(village, choice1, choice2, choice3, &test, handpos, currPlayer);
-	
+	cardEffect(village, choice1, choice2, choice3, &test, handpos, &bonus);
+
+	//Test 1: Check if hand +1 card
 	cardDiff = test.handCount[currPlayer] - game.handCount[currPlayer];
 	
-	if (cardDiff != 2){
+	if (cardDiff != 0){
 		printf("Incorrect number of cards added to hand. Test failed. \n");
+		err++;
 	}
 	
-	coinDiff = test.coins[currPlayer] - game.coins[currPlayer];
+	//Test 2: Check if Actions +2	
+	actDiff = test.numActions - game.numActions;
 	
-	if (coinDiff < 2){
-		printf("Insufficient number of treasures drawn. Test failed. \n");
-	}		
+	if (actDiff != 1){
+		printf("Incorrent number of actions added. Test failed. \n");
+		err++;
+	}	
+
+	//Pass/Fail
+	if(err == 0){
+		printf("All tests passed. \n");
+	}
  }
- 
- // CARD OUTCOME: +1 card, +2 actions
- // TESTS NEEDED
- // Test 1: currPlayer.handCount +1
- // Test 2: currPlayer.numActions +2
- 

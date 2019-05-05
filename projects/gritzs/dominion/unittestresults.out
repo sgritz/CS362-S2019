@@ -1,0 +1,13 @@
+Testing Adventurer: 
+Incorrect number of cards added to hand. Test failed. 
+One of your last two cards is not a treasure. Test failed. 
+Testing Smithy: 
+Incorrect number of cards added to hand. Test failed. 
+Testing Village: 
+Incorrent number of actions added. Test failed. 
+Testing Remodel: 
+All tests passed. 
+Testing playAdventurer(): 
+Too many cards added to hand. Test failed. 
+Testing playFeast(): 
+Invalid card drawn (cost). Test failed. 

@@ -17,7 +17,6 @@
  #include "rngs.h"
  
  int main(){
-	int i;
 	int seed = 1000;
 	int numPlayers = 2;
 	int currPlayer = 0;
@@ -25,6 +24,7 @@
 	int actDiff;
 	int kingdom[10] = {adventurer, council_room, feast, gardens, mine, remodel, smithy, village, baron, great_hall};
 	struct gameState game, test;
+	int err = 0;
 	
 	//Initialize game
 	initializeGame(numPlayers, kingdom, seed, &game);
@@ -35,19 +35,23 @@
 	
 	playGreatHall(currPlayer, &test);
 	
-	//Hand count increased by +1?6+
+	//Hand count increased by +1?
 	cardDiff = test.handCount[currPlayer] - game.handCount[currPlayer];
 	
 	if (cardDiff != 1){
 		printf("Incorrect number of cards added to hand. Test failed. \n");
+		err++;	
 	}
 	
 	//Actions increased by +1
 	actDiff = test.numActions - game.numActions;
 	if (actDiff != 1){
-		printf("Incorrect number of actions. Test failed. \n")
+		printf("Incorrect number of actions. Test failed. \n");
+		err++;
 	}
- } 
- 
- //Tests needed:
- //Make sure discarded, not added back to deck
+	
+	//Pass/fail?
+	if (err == 0){
+		printf("All tests passed. \n");
+	} 
+} 

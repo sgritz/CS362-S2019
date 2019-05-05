@@ -18,16 +18,13 @@
  #include "rngs.h"
  
  int main(){
-	int i;
 	int seed = 1000;
 	int numPlayers = 2;
 	int currPlayer = 0;
 	int cardDiff;
-`	int coinDiff;	
 	int kingdom[10] = {adventurer, council_room, feast, gardens, mine, remodel, smithy, village, baron, great_hall};
-	int temp[MAX_HAND];
 	struct gameState game, test;
-	int err = 0;  //if zero at end, passed all tests
+	int err =0;
 	
 	//Initialize game
 	initializeGame(numPlayers, kingdom, seed, &game);
@@ -42,10 +39,18 @@
 	
 	if (cardDiff < 1){
 		printf("Too few cards added to hand. Test failed. \n");
+		err++;
 	}
 	
 	if (cardDiff >= 3){
 		printf("Too many cards added to hand. Test failed. \n");
+		err++;
 	}
+	
+	//Pass/Fail?
+        if(err == 0){
+                printf("All tests passed. \n");
+	}
+
 		
  }

@@ -17,14 +17,14 @@
  #include "rngs.h"
  
  int main(){
-	int i;
 	int seed = 1000;
 	int numPlayers = 2;
 	int currPlayer = 0;
 	int cardDiff;	
-	int choice1 = 0, choice2 = 0, choice 3 = 0, handpos = 0; 
+	int choice1 = 0, choice2 = 0, choice3 = 0, handpos = 0, bonus = 0; 
 	int kingdom[10] = {adventurer, council_room, feast, gardens, mine, remodel, smithy, village, baron, great_hall};
 	struct gameState game, test;
+	int err = 0;
 	
 	//Initialize game
 	initializeGame(numPlayers, kingdom, seed, &game);
@@ -33,18 +33,18 @@
 	
 	memcpy(&test, &game, sizeof(struct gameState));
 	
-	cardEffect(remodel, choice1, choice2, choice3, &test, handpos, currPlayer);
-	
+	cardEffect(remodel, choice1, choice2, choice3, &test, handpos, &bonus);
+
+	//Test 1: Net 0 change in hand count	
 	cardDiff = test.handCount[currPlayer] - game.handCount[currPlayer];
 	
 	if (cardDiff != 0){
 		printf("Incorrect number of cards added to hand. Test failed. \n");
+		err++;
 	}
- }
- 
- //CARD OUTCOME: trash a card from hand, gain coin costing up to 2 more than it
- //TESTS NEEDED
- //Test 1 - if handCountDiff != 0, something wrong with discard or draw, if -1 need to draw
- //Test 2 - if handCostDiff (see for loop used in FEAST TEST) <2, >0, fails
- 
- 
+	
+	//Pass/Fail
+	if(err == 0){
+		printf("All tests passed. \n");
+	}
+ }		
