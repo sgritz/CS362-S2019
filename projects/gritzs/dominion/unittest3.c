@@ -38,14 +38,14 @@
 	//Hand count increased by +1?
 	cardDiff = test.handCount[currPlayer] - game.handCount[currPlayer];
 	
-	if (cardDiff != 1){
+	if (cardDiff != 0){
 		printf("Incorrect number of cards added to hand. Test failed. \n");
 		err++;	
 	}
 	
 	//Actions increased by +1
 	actDiff = test.numActions - game.numActions;
-	if (actDiff != 1){
+	if (actDiff != 0){
 		printf("Incorrect number of actions. Test failed. \n");
 		err++;
 	}

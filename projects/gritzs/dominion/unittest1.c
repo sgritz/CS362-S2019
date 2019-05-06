@@ -37,12 +37,12 @@
 	
 	cardDiff = test.handCount[currPlayer] - game.handCount[currPlayer];
 	
-	if (cardDiff < 1){
+	if (cardDiff < 0){
 		printf("Too few cards added to hand. Test failed. \n");
 		err++;
 	}
 	
-	if (cardDiff >= 3){
+	if (cardDiff >= 2){
 		printf("Too many cards added to hand. Test failed. \n");
 		err++;
 	}

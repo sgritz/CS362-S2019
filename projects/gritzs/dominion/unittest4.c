@@ -1,4 +1,4 @@
-/*-----------------------------------------------------------------------------------
+/*---------------------------------------------------------------------------
  *Assignment 3: Unit Test 4 - playCouncilRoom() Test
  *Author: Stephanie Gritz
  *OSU CS362-400
@@ -40,7 +40,7 @@
 	//hand count +4
 	cardDiffP1 = test.handCount[currPlayer] - game.handCount[currPlayer];
 	
-	if (cardDiffP1 != 4){
+	if (cardDiffP1 != 3){
 		printf("Incorrect number of cards added to hand. Test failed. \n");
 		err++;
 	}
