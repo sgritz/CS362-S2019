@@ -1,0 +1,6 @@
+Result for running Dominion tests:
+unittest1.c:
+Testing playAdventurer(): 
+Too few cards added to hand. Test failed. 
+
+unittest2.c:
